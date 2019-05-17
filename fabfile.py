@@ -7,12 +7,12 @@ from datetime import datetime
 from fabric.api import *
 # 服务器登录用户名
 env.user = 'ubuntu'
-env.key_filename = './.ssh/MyKeyPair.pem'
+env.key_filename = 'C:/Users/Admin/.ssh/KeyPair.pem'
 # sudo用户为root:
-env.sudo_user = 'ubuntu'
+env.sudo_user = 'root'
 # 服务器地址，可以有多个，依次部署:
 # env.hosts = ['123.123.123.123']
-env.host_string = '3.15.4.96' # 改成你的服务器ip
+env.host_string = '18.216.133.91' # 改成你的服务器ip
 
 # 服务器MySQL用户名和口令:
 db_user = 'root'
